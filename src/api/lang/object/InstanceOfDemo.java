@@ -15,22 +15,22 @@ public class InstanceOfDemo {
 		test.doWork(amblulance);
 	}
 	
-	public void doWork(Car c){
+	public void doWork(Car dc){
 		/*
 		 * 소방차가 Car 타입인지 확인 후 맞다면
 		 * (FireCar) 로 객체 캐스팅을 하라
 		 * */
-		if (c instanceof FireCar) {
-			FireCar f = (FireCar) c;
+		if (dc instanceof FireCar) {
+			FireCar f = (FireCar) dc;
 			f.driver();
 			f.stop();
 			f.shootWater();
 			/*
-			 * 엠뷸런스가 Car 타입인지 확인 후 맞다면
-			 * (Amblulance) 로 객체 캐스팅을 하라
+			 * 파라미터로 넘어온 c가 Car 타입인지 확인 후 
+			 * 맞다면 (Amblulance) 로 객체 캐스팅을 하라
 			 * */
-		} else if (c instanceof Amblulance) {
-			Amblulance a = (Amblulance) c;
+		} else if (dc instanceof Amblulance) {
+			Amblulance a = (Amblulance) dc;
 			a.driver();
 			a.siren();
 			a.stop();
