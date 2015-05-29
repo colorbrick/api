@@ -1,4 +1,4 @@
-package api.util.vector;
+package api.util.vector.answer;
 
 import java.util.Vector;
 
@@ -15,9 +15,9 @@ public interface GradeService {
 	/*
 	 * 학번을 이요해서
 	 * */
-	public String serchGradeByHak(String hak);
+	public String searchGradeByHak(String hak);
 	
-	public Vector<String> serchGradeByName(String name);
+	public Vector<String> searchGradeByName(String name);
 	
 	public void descGradeTotal();
 	
